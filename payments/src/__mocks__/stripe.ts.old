@@ -1,0 +1,7 @@
+export const stripe = {
+  charges: {
+    // To simulate the libaray, returns a promise,
+    // that resolves automatically resolves itself
+    create: jest.fn().mockResolvedValue({}),
+  },
+};
