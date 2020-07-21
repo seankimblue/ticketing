@@ -1,6 +1,5 @@
 import request from 'supertest';
 import { app } from '../../app';
-import { requireAuth } from '../../middlewares/require-auth';
 
 it('returns a 201 on successful signup', async () => {
   return request(app)
