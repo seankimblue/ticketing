@@ -7,6 +7,8 @@ import { app } from './app';
 // the latest version of Node can allow await at the top level,
 // outside of function
 const start = async () => {
+  console.log('Starting up....');
+
   if (!process.env.JWT_KEY) {
     throw new Error('JWT_KEY must be defined');
   }
