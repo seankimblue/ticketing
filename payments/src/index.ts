@@ -11,6 +11,8 @@ import { OrderCancelledListener } from './events/listeners/order-cancelled-liste
 // the latest version of Node can allow await at the top level,
 // outside of function
 const start = async () => {
+  console.log('Starting...');
+
   if (!process.env.JWT_KEY) {
     throw new Error('JWT_KEY must be defined');
   }
